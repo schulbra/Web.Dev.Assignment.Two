@@ -1,0 +1,215 @@
+<!------------------------------------------------------------------------
+; Author:Brandon Schultz
+; First Modified: 4-10-20          Last Modified: 4-13-20
+; OSU email address:               schulbra@oregonstate.edu
+; Course number/section:           CS 290 400 Spring 2020
+; Due Date: 4-13-20
+; Description: HW Assignment 2 HTML/CSS     style.css
+; EXTRA CREDIT: Make the non-header rows alternate colors was attempted. 
+------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html> 
+<head>
+ <meta charset="utf-8">
+ <title>CS290 Assignment 2:HTML</title>
+ <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<!------------------------------------------------------------------------
+6x6 Table filled with sample data detailing NCAMM basketball power rankings 
+post-2019/2020 season.
+------------------------------------------------------------------------->
+<h4> 1. 6x6 Table: </h4>
+
+<table id="table">
+ <caption>2019-2020 NCAMM Team Rankings</caption>
+  <thead>
+   <tr>
+	<th></th>
+	<th>Team #1</th>
+	<th>Team #2</th>
+	<th>Team #3</th>
+	<th>Team #4</th>
+	<th>Team #5</th>
+   </tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><em>Tier 1: Actually good</em></td>
+			<td>COVID-19</td>
+			<td>Gonzaga</td>
+			<td>Dayton</td>
+			<td>Kansas</td>
+			<td>Creighton</td>
+		</tr>
+		<tr>
+			<td><em>Tier 2: Actually good loosers</em></td>
+			<td>Baylor</td>
+			<td>Maryland</td>
+			<td>San Diego State</td>
+			<td>Seton Hall</td>
+			<td>BYU</td>
+		</tr>
+		<tr>
+			<td><em>Tier 3: Sweet 16/Upset rnd #1</em></td>
+			<td>FSU</td>
+			<td>Villanova</td>
+			<td>Michigan State</td>
+			<td>Virginia</td>
+			<td>Wisconsin</td>
+		</tr>
+		<tr>
+			<td><em>Tier 4: Upset Blue Bloods</em></td>
+			<td>Duke</td>
+			<td>Kentucky</td>
+			<td>Louisville</td>
+			<td>Butler</td>
+			<td>Oregon</td>
+		</tr>
+		<tr>
+			<td><em>Tier 5: We Want Bama </em></td>
+			<td>Utah State</td>
+			<td>West Virginia</td>
+			<td>Providence</td>
+			<td>Illinois</td>
+			<td>Stephen F. Austin</td>
+		</tr>
+	</tbody>
+<tfoot>
+   <tr>
+     <td colspan="2">Footer 1</td>
+     <td colspan="4">Footer 2</td>
+   </tr>
+</tfoot>
+</table>
+
+<!------------------------------------------------------------------------
+List containing three sections:
+------------------------------------------------------------------------->
+
+<h4> 2. List Example: </h4>
+
+<ul>
+ <li> Things that think I'm funny:
+	<ol>
+		<li>Me</li>
+		<li>People on the internet</li>
+		<li>Not my GF</li>
+	</ol>
+</li>
+	<li> Things that I think are funny:
+	<ol>
+		<li>Me</li>
+		<li>John Mulaney</li>
+		<li>My dog running on tile. Poorly.</li>
+	</ol>
+</li>
+	<li> Things that my GF wont let me buy:
+	<ol>
+		<li>Tiger</li>
+		<li>R34</li>
+		<li>My own toothbrush</li>
+	</ol>
+</li>
+</ul>
+
+<!------------------------------------------------------------------------
+3. Displays a div that is aligned to the left side of the page and takes 
+up 3/4 of the page width, has a space of 20px between it and the previous 
+element and has a class of 'outer-content'.
+------------------------------------------------------------------------->
+<h4> 3. Div </h4>
+
+<div class="outer-content">
+   <div class="inner-content">
+     Inner-Content Div 
+   </div>
+</div>
+
+<!------------------------------------------------------------------------
+4. Post and Get Form Examples:
+------------------------------------------------------------------------->
+
+<h4> 4. POST and GET Forms: </h4>
+
+<!-- Post -->
+<form action="
+http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+<fieldset>
+ <legend>Some POST data</legend>
+ <br>
+		<label for="text">Text here:
+		<input id="text" type="text" name="text_input">
+		</label>
+	<br>
+		<label for="number">Number here:	
+		<input id ="number" type="number" name="numerical_input">
+		</label>	
+	<br>
+		<label for="password">Password here:
+		<input id="password" type="password" name="password_input">
+		</label>		
+	<br>
+	 <section class="radio">Select between:
+	 <br><br>
+		<label for="Snickers">		
+		<input id="Snickers" type="radio" name="candy">
+		Snickers</label>
+		<br>
+		<label for="Skittles">
+		<input id="Skittles" type="radio" name="candy">	
+		Skittles</label>
+		<br>	
+		<label for="Mentos">
+		<input id="Mentos" type="radio" name="candy">	
+		Mentos</label>	
+		<br>
+	 <input type="submit" name="submit">
+	 <br>
+	 </section>
+</fieldset>
+</form>
+
+<br><br>
+
+<!-- Get -->
+<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+<fieldset>
+	<legend>Some GET data</legend>
+	<br>
+	 <label for="text">Text here:
+	 <input id="text" type="text" name="text_input">
+	 </label>
+	<br>
+	 <label for="number">Number here:	
+	 <input id ="number" type="number" name="numerical_input">
+	 </label>	
+	<br>
+	 <label for="password">Password here:
+	 <input id="password" type="password" name="password_input">
+	 </label>		
+	<br>
+	 <section class="radio">Select between:
+	 <br><br>
+		<label for="Snickers">		
+		<input id="Snickers" type="radio" name="candy">
+		Snickers</label>
+	<br>
+		<label for="Skittles">
+		<input id="Skittles" type="radio" name="candy">	
+		Skittles</label>
+	<br>	
+		<label for="Mentos">
+		<input id="Mentos" type="radio" name="candy">	
+		Mentos</label>	
+		<br>
+	<input type="submit" name="submit">
+   <br>
+ </section>
+</fieldset>
+</form>
+
+</body>
+</html>

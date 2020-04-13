@@ -1,0 +1,83 @@
+/*------------------------------------------------------------------------
+; Author:Brandon Schultz
+; First Modified: 4-10-20          Last Modified: 4-13-20
+; OSU email address:               schulbra@oregonstate.edu
+; Course number/section:           CS 290 400 Spring 2020
+; Due Date: 4-13-20
+; Description: HW Assignment 2 HTML/CSS     style.css
+; EXTRA CREDIT: Make the non-header rows alternate colors was attempted. 
+------------------------------------------------------------------------*/
+
+h4{
+    text-decoration: underline;
+}
+
+/*Creates boarders for cells that makeup overall table.*/
+table#table
+{
+    border:1px solid black;
+}
+
+table#table td
+{
+    border:1px solid black;
+}
+
+table#table th
+{
+    border:1px solid black;
+}
+
+/*Colors in cells of table for extra credit.*/
+table#table tbody tr:nth-of-type(odd)
+{
+    background-color:#1d66db;
+}
+
+table#table tbody tr:nth-of-type(even)
+{
+    background-color:#e7f9f7;
+}
+
+/*Sets Outer Content Div Attributes:*/
+div.outer-content
+{
+    background-color: pink;  
+    margin-left: 0px;
+    width: 75%;
+    margin-top: 20px;
+}
+
+/*Sets Inner Content Div Attributes:*/
+div.inner-content
+{
+    background-color:  #3883fc;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+/*Sets Post and Get form boarders and attributes:*/
+label
+{
+    border: 1px solid black;
+    padding: 3px;
+    display: block;
+    margin: 0 auto;
+}
+
+section.radio
+{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+ section.radio label
+ {
+	 	border: none; 
+	 	padding: 0;
+	 	margin: 0;
+	 	padding: 3px;
+ }
